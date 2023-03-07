@@ -401,6 +401,19 @@
         });
     };
 
+    var eventDesc = function() {
+        $(".service-content").mouseover(function(){
+            var i=$(this).index(".service-content");
+            $(".h05").eq(i).css({"display":"none"});
+            $(".events-desc").eq(i).css({"display":"block"})
+        })
+        $(".service-content").mouseleave(function(){
+            var i=$(this).index(".service-content");
+            $(".h05").eq(i).removeAttr("style");
+            $(".events-desc").eq(i).removeAttr("style");
+        })
+    };
+
 
 
     /* Initialize
@@ -423,9 +436,9 @@
         ssContactForm();
         ssAjaxChimp();
         ssBackToTop();
+        eventDesc();
 
     })();
-
 
 })(jQuery);
 
@@ -462,3 +475,5 @@ function fun() {
 
     }
 }
+
+

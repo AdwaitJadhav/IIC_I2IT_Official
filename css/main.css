@@ -1703,7 +1703,7 @@
      header .header-logo-iic a {
         width: 110px;
         height: 80px;
-        background-size: 110px 70px;
+        background-size: 90px 60px;
     }
  }
  
@@ -1711,6 +1711,19 @@
      #header-menu-trigger .header-menu-text {
          display: none;
      }
+     header .header-logo a {
+        top:25px;
+        width: 80px;
+        height: 80px;
+        background-size: 90px 70px;
+    }
+    header .header-logo-iic a {
+        top:25px;
+        right:100px;
+       width: 90px;
+       height: 80px;
+       background-size: 90px 60px;
+   }
  }
  
  /* ===================================================================
